@@ -7,19 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E3A5F702B3E33FB00F02A54 /* BarcodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3A5F6F2B3E33FB00F02A54 /* BarcodeScannerView.swift */; };
+		0E3A5F722B3E409900F02A54 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3A5F712B3E409900F02A54 /* CameraView.swift */; };
 		0E6970552984FA0E00C9A885 /* BarCodeDetectorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6970542984FA0E00C9A885 /* BarCodeDetectorApp.swift */; };
 		0E6970572984FA0E00C9A885 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6970562984FA0E00C9A885 /* ContentView.swift */; };
 		0E6970592984FA0E00C9A885 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E6970582984FA0E00C9A885 /* Assets.xcassets */; };
 		0E69705D2984FA0E00C9A885 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E69705C2984FA0E00C9A885 /* Preview Assets.xcassets */; };
+		0E6970662984FACE00C9A885 /* BarcodeGeneratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6970652984FACE00C9A885 /* BarcodeGeneratorView.swift */; };
+		0E69706B2984FB4400C9A885 /* BarcodeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E69706A2984FB4400C9A885 /* BarcodeType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E3A5F6F2B3E33FB00F02A54 /* BarcodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerView.swift; sourceTree = "<group>"; };
+		0E3A5F712B3E409900F02A54 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		0E6970512984FA0E00C9A885 /* BarCodeDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarCodeDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E6970542984FA0E00C9A885 /* BarCodeDetectorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCodeDetectorApp.swift; sourceTree = "<group>"; };
 		0E6970562984FA0E00C9A885 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0E6970582984FA0E00C9A885 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E69705A2984FA0E00C9A885 /* BarCodeDetector.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BarCodeDetector.entitlements; sourceTree = "<group>"; };
 		0E69705C2984FA0E00C9A885 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0E6970652984FACE00C9A885 /* BarcodeGeneratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeGeneratorView.swift; sourceTree = "<group>"; };
+		0E69706A2984FB4400C9A885 /* BarcodeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +60,9 @@
 		0E6970532984FA0E00C9A885 /* BarCodeDetector */ = {
 			isa = PBXGroup;
 			children = (
-				0E6970542984FA0E00C9A885 /* BarCodeDetectorApp.swift */,
-				0E6970562984FA0E00C9A885 /* ContentView.swift */,
-				0E6970582984FA0E00C9A885 /* Assets.xcassets */,
-				0E69705A2984FA0E00C9A885 /* BarCodeDetector.entitlements */,
+				0E6970672984FB0A00C9A885 /* Resources */,
+				0E69706C2984FC0800C9A885 /* Models */,
+				0E6970682984FB1900C9A885 /* Views */,
 				0E69705B2984FA0E00C9A885 /* Preview Content */,
 			);
 			path = BarCodeDetector;
@@ -67,6 +74,35 @@
 				0E69705C2984FA0E00C9A885 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0E6970672984FB0A00C9A885 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0E6970542984FA0E00C9A885 /* BarCodeDetectorApp.swift */,
+				0E6970582984FA0E00C9A885 /* Assets.xcassets */,
+				0E69705A2984FA0E00C9A885 /* BarCodeDetector.entitlements */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0E6970682984FB1900C9A885 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0E6970562984FA0E00C9A885 /* ContentView.swift */,
+				0E6970652984FACE00C9A885 /* BarcodeGeneratorView.swift */,
+				0E3A5F6F2B3E33FB00F02A54 /* BarcodeScannerView.swift */,
+				0E3A5F712B3E409900F02A54 /* CameraView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0E69706C2984FC0800C9A885 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0E69706A2984FB4400C9A885 /* BarcodeType.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +175,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E3A5F702B3E33FB00F02A54 /* BarcodeScannerView.swift in Sources */,
+				0E3A5F722B3E409900F02A54 /* CameraView.swift in Sources */,
+				0E69706B2984FB4400C9A885 /* BarcodeType.swift in Sources */,
 				0E6970572984FA0E00C9A885 /* ContentView.swift in Sources */,
 				0E6970552984FA0E00C9A885 /* BarCodeDetectorApp.swift in Sources */,
+				0E6970662984FACE00C9A885 /* BarcodeGeneratorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,7 +301,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = BarCodeDetector/BarCodeDetector.entitlements;
+				CODE_SIGN_ENTITLEMENTS = BarCodeDetector/Resources/BarCodeDetector.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BarCodeDetector/Preview Content\"";
@@ -269,6 +309,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "You come to me, on the day of my daughter's wedding, and you ask me for camera access";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -279,7 +320,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
@@ -299,7 +340,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = BarCodeDetector/BarCodeDetector.entitlements;
+				CODE_SIGN_ENTITLEMENTS = BarCodeDetector/Resources/BarCodeDetector.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BarCodeDetector/Preview Content\"";
@@ -307,6 +348,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "You come to me, on the day of my daughter's wedding, and you ask me for camera access";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -317,7 +359,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
