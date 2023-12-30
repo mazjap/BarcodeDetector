@@ -28,6 +28,7 @@
 		0E69705C2984FA0E00C9A885 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0E6970652984FACE00C9A885 /* BarcodeGeneratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeGeneratorView.swift; sourceTree = "<group>"; };
 		0E69706A2984FB4400C9A885 /* BarcodeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeType.swift; sourceTree = "<group>"; };
+		0E7FCAD92B3FC9CA0005E7D2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +45,7 @@
 		0E6970482984FA0E00C9A885 = {
 			isa = PBXGroup;
 			children = (
+				0E7FCAD92B3FC9CA0005E7D2 /* README.md */,
 				0E6970532984FA0E00C9A885 /* BarCodeDetector */,
 				0E6970522984FA0E00C9A885 /* Products */,
 			);
